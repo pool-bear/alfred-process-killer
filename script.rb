@@ -1,6 +1,12 @@
 # Type a query to test with here.
 # !!!!! Comment this line out when pasting into alfred preferences.
 theQuery = "chr"
+# Define aliases
+case theQuery
+when "vscode"
+	theQuery = "electron"
+else
+end
 # Grab the query that the user typed (this is provided by Alfred).
 # !!!!! Uncomment this line when pasting into Alfred Preferences.
 #theQuery = "{query}"
