@@ -1,6 +1,9 @@
 # Type a query to test with here.
 # !!!!! Comment this line out when pasting into alfred preferences.
-theQuery = "chr"
+# theQuery = "chr"
+# Grab the query that the user typed (this is provided by Alfred).
+# !!!!! Uncomment this line when pasting into Alfred Preferences.
+theQuery = "{query}"
 # Define aliases
 case theQuery
 when "vscode"
@@ -9,9 +12,6 @@ when "wework"
 	theQuery = "企业微信"
 else
 end
-# Grab the query that the user typed (this is provided by Alfred).
-# !!!!! Uncomment this line when pasting into Alfred Preferences.
-#theQuery = "{query}"
 # Search the query string for an argument filter (in the form of 'process:arg').
 argsQuery = nil
 if theQuery.include? ":"
