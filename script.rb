@@ -5,6 +5,8 @@ theQuery = "chr"
 case theQuery
 when "vscode"
 	theQuery = "electron"
+when "wework"
+	theQuery = "企业微信"
 else
 end
 # Grab the query that the user typed (this is provided by Alfred).
